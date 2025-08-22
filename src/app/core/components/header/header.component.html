@@ -1,0 +1,16 @@
+<header class="fnf-header" [class.shrunk]="isShrunk" [style.height.px]="headerHeightPx">
+  <div class="logo-container">
+    <img
+      src="assets/fitnfork_big.png"
+      alt="Logo Fit and Fork"
+      class="logo"
+      [style.width.px]="logoWidth"
+      [style.opacity]="logoOpacity"
+      draggable="false"
+      (click)="scrollToTop()" />
+
+    <h1 class="title" [style.fontSize.px]="titleSize" [style.opacity]="titleOpacity">
+      Fit and Fork
+    </h1>
+  </div>
+</header>

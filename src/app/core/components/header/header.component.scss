@@ -1,0 +1,62 @@
+@import '../../../styles/colors.scss';
+
+.fnf-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: var(--fnf-yellow, $fnf-yellow);
+  z-index: 1000;
+  overflow: visible;
+  transition: height 0.45s cubic-bezier(0.22, 0.98, 0.36, 0.99);
+}
+
+.logo-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 1100px;
+  transition: transform 0.35s ease;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.28s ease, opacity 0.28s ease, transform 0.28s ease, left 0.28s ease;
+  max-width: 100%;
+  pointer-events: auto;
+  width: 0;
+  opacity: 0;
+  z-index: 2;
+}
+
+.fnf-header.shrunk .logo {
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: 900;
+  margin-top: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: $fnf-black;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6), -1px -1px 4px rgba(255, 255, 255, 0.1);
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fnf-header::after {
+  content: '';
+  display: block;
+  height: 24px;
+}

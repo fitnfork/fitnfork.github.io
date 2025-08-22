@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --hero-height: 100vh;
+}
+
+.contenido {
+  padding-top: calc(var(--hero-height) + 40px);
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

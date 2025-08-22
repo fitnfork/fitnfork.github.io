@@ -1,52 +1,17 @@
+@import '../app/styles/colors.scss';
 .portada {
+  background-color: $fnf-yellow;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.hero-spacer {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  position: relative;
-  overflow: hidden;
-
-  background: linear-gradient(
-    15deg,
-    #ffdd00 50%,
-    #000000 50%
-  );
-
-  .title {
-    font-size: 6.5rem;
-    font-weight: 900;
-    margin-top: 1rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-shadow:
-      2px 2px 6px rgba(0, 0, 0, 0.6),
-      -1px -1px 4px rgba(255, 255, 255, 0.1);
-  }
-
-  .subtitle {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-top: 1rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #000000;
-    text-shadow:
-      2px 2px 6px rgba(0, 0, 0, 0.6),
-      -1px -1px 4px rgba(255, 255, 255, 0.1);
-  }
 }
 
-@media (max-width: 600px) {
-  .portada {
-    .title {
-      font-size: 3.5rem;
-    }
-    .subtitle {
-      font-size: 1.4rem;
-    }
-  }
+.contenido {
+  padding: 2rem;
 }
